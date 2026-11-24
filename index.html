@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>මිස් පෙළ විභාගය 2026 📝</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500;700;800&family=Gemunu+Libre:wght@600;800&family=Noto+Sans+Sinhala:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --desk:#2F6B5A; --paper:#FDFBF3; --ink:#1E2A44; --pen:#D0021B; --rule:#C9DAEC; --margin:#F2A3A3;
+  --soft:#5b6680; --card:#FFF6D6; --shadow:rgba(0,0,0,.28);
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--desk:#0F2A23;--paper:#20242F;--ink:#E9EDF7;--pen:#FF5A6A;--rule:#323a4d;--margin:#6b3640;--soft:#aab3c8;--card:#2b2a20;--shadow:rgba(0,0,0,.6);color-scheme:dark}
+}
+:root[data-theme="dark"]{--desk:#0F2A23;--paper:#20242F;--ink:#E9EDF7;--pen:#FF5A6A;--rule:#323a4d;--margin:#6b3640;--soft:#aab3c8;--card:#2b2a20;--shadow:rgba(0,0,0,.6);color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--desk); color:var(--ink);
+  font-family:"Abhaya Libre","Noto Sans Sinhala",serif; font-size:19px; line-height:1.6;
+  background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px); background-size:14px 14px;
+  overflow-x:hidden;
+}
+button{font:inherit;cursor:pointer;color:inherit}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--pen);outline-offset:3px}
+
+.paper{
+  max-width:720px;margin:22px auto 40px;background:var(--paper);
+  background-image:linear-gradient(90deg,transparent 46px,var(--margin) 46px,var(--margin) 48px,transparent 48px),
+                   repeating-linear-gradient(transparent 0 33px,var(--rule) 33px 34px);
+  padding:26px 22px 34px 64px;border-radius:4px;box-shadow:0 18px 40px var(--shadow);position:relative;min-height:80vh;
+}
+@media (max-width:520px){.paper{margin:10px 8px 30px;padding:20px 14px 28px 52px;background-image:linear-gradient(90deg,transparent 38px,var(--margin) 38px,var(--margin) 40px,transparent 40px),repeating-linear-gradient(transparent 0 33px,var(--rule) 33px 34px)}}
+
+.head{text-align:center;border-bottom:3px double var(--ink);padding-bottom:12px;margin-bottom:18px}
+.rights{font-family:"Noto Sans Sinhala",sans-serif;font-size:12px;border:1.5px solid var(--ink);display:inline-block;padding:0 8px;margin-bottom:8px}
+.dept{font-family:"Gemunu Libre",sans-serif;font-weight:800;font-size:clamp(20px,5vw,26px);line-height:1.2}
+.exam{font-family:"Gemunu Libre",sans-serif;font-weight:800;font-size:clamp(30px,8vw,46px);line-height:1.1;margin:4px 0}
+.meta{font-size:15px;color:var(--soft);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:8px}
+
+h2{font-family:"Gemunu Libre",sans-serif;font-weight:800;font-size:clamp(24px,6vw,32px);line-height:1.25;margin:6px 0 14px}
+.q{font-weight:800;font-size:21px;margin:0 0 16px}
+.marks{font-weight:500;color:var(--soft);font-size:16px}
+.opts{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.opt{
+  display:flex;gap:12px;align-items:center;text-align:left;width:100%;
+  background:transparent;border:2px solid var(--ink);border-radius:10px;padding:8px 14px;font-weight:700;font-size:19px;
+  transition:transform .25s ease, background .15s;position:relative;
+}
+.opt:hover{background:rgba(127,127,127,.08)}
+.opt .l{font-family:"Gemunu Libre",sans-serif;font-weight:800;min-width:26px}
+.opt.picked{border-color:var(--pen)}
+.opt.picked .l{color:var(--pen)}
+.opt.picked::after{content:"";position:absolute;left:4px;top:50%;width:36px;height:36px;margin-top:-18px;border:3px solid var(--pen);border-radius:50%;transform:rotate(-8deg)}
+.opts.locked .opt{pointer-events:none}
+.remark{font-family:"Noto Sans Sinhala",sans-serif;color:var(--pen);font-weight:800;font-size:18px;min-height:30px;margin:14px 0 0;transform:rotate(-1.5deg)}
+.next{
+  margin-top:18px;background:var(--ink);color:var(--paper);border:none;border-radius:999px;padding:8px 26px;font-weight:800;font-size:19px;
+  font-family:"Noto Sans Sinhala",sans-serif;
+}
+.next[hidden]{display:none}
+.big{font-size:21px;padding:12px 34px}
+
+label.f{display:block;font-weight:700;margin:14px 0 4px}
+input.line{width:100%;border:none;border-bottom:2px dashed var(--ink);background:transparent;font:inherit;font-size:22px;font-weight:800;color:var(--ink);padding:4px 2px}
+.admit{border:2px solid var(--ink);border-radius:8px;padding:14px 16px;margin:8px 0 18px;background:var(--card)}
+.admit p{margin:2px 0}
+.rules{padding-left:22px;margin:8px 0 0}
+.rules li{margin:2px 0}
+
+.slider{width:100%;accent-color:var(--pen);height:34px}
+.sval{font-family:"Gemunu Libre",sans-serif;font-weight:800;font-size:44px;text-align:center;color:var(--pen);line-height:1}
+.slabel{text-align:center;font-weight:800;min-height:32px}
+
+textarea{
+  width:100%;min-height:200px;border:none;background:transparent;resize:none;font:inherit;font-size:20px;color:var(--ink);
+  line-height:34px;padding:0;background-image:repeating-linear-gradient(transparent 0 33px,var(--rule) 33px 34px);
+}
+
+.game{position:relative;height:380px;border:2px solid var(--ink);border-radius:12px;overflow:hidden;touch-action:none;user-select:none;background:var(--card)}
+.drop{position:absolute;top:0;font-size:42px;background:none;border:none;padding:4px;line-height:1}
+.pop{position:absolute;font-family:"Noto Sans Sinhala",sans-serif;font-weight:800;color:var(--pen);pointer-events:none;animation:up .8s ease forwards}
+@keyframes up{to{transform:translateY(-40px);opacity:0}}
+.hud{display:flex;justify-content:space-between;font-weight:800;margin-bottom:8px;font-family:"Noto Sans Sinhala",sans-serif}
+
+table.res{width:100%;border-collapse:collapse;margin:8px 0 16px;font-size:18px}
+.res th,.res td{border:1.5px solid var(--ink);padding:6px 10px;text-align:left}
+.res td.g{font-family:"Gemunu Libre",sans-serif;font-weight:800;font-size:24px;text-align:center;color:var(--pen);width:70px}
+.res td.n{font-size:15px;color:var(--soft)}
+.stamp{
+  position:absolute;right:18px;top:150px;border:5px double var(--pen);color:var(--pen);border-radius:12px;padding:4px 14px;
+  font-family:"Gemunu Libre",sans-serif;font-weight:800;font-size:30px;transform:rotate(-14deg) scale(1.6);opacity:0;
+  transition:all .5s cubic-bezier(.2,1.6,.4,1);background:rgba(255,255,255,.04);pointer-events:none;text-align:center;line-height:1.1
+}
+.stamp.on{opacity:.88;transform:rotate(-14deg) scale(1)}
+.scratch{position:relative;max-width:420px;margin:20px auto 0;border-radius:14px;overflow:hidden;border:3px dashed var(--pen)}
+.prize{padding:22px 18px;text-align:center;background:var(--card)}
+.prize b{display:block;font-family:"Gemunu Libre",sans-serif;font-size:28px;line-height:1.2;color:var(--pen)}
+.scratch canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}
+.sig{text-align:right;margin-top:22px;font-weight:700}
+.sig span{font-family:"Gemunu Libre",sans-serif;font-size:26px;color:var(--ink);display:block}
+
+.toast{
+  position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translate(-50%,140%);
+  background:#1E2A44;color:#fff;border-radius:14px;padding:10px 18px;font-family:"Noto Sans Sinhala",sans-serif;font-weight:700;font-size:16px;
+  max-width:92vw;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:transform .35s ease;z-index:40;text-align:center
+}
+.toast.on{transform:translate(-50%,0)}
+canvas#confetti{position:fixed;inset:0;pointer-events:none;z-index:50}
+@media (prefers-reduced-motion:reduce){.opt,.stamp,.toast{transition:none}}
+</style>
+</head>
+<body>
+<canvas id="confetti"></canvas>
+<main class="paper" id="paper">
+  <header class="head">
+    <div class="rights">සියලුම හිමිකම් රාහුල් සතුයි</div>
+    <div class="dept">ශ්‍රී ලංකා ආදර විභාග දෙපාර්තමේන්තුව</div>
+    <div class="exam">අ.පො.ස. (මිස් පෙළ) විභාගය – 2026</div>
+    <div class="meta"><span>විෂය: රාහුල්ව මිස් කිරීම</span><span id="timer">කාලය: පැය 3යි ⏳</span></div>
+  </header>
+  <section id="screen"></section>
+  <div class="stamp" id="stamp">විශිෂ්ට<br>සාමාර්ථ</div>
+</main>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const $ = id => document.getElementById(id);
+const screen = $("screen");
+let herName = "මගේ බබා", herEssay = "", hugScore = 0, toastTimer = null, invigilator = null;
+
+/* ---------- Helpers ---------- */
+function toast(msg, ms=2600){
+  const t=$("toast"); t.textContent=msg; t.classList.add("on");
+  clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove("on"),ms);
+}
+const graphemes = s => (window.Intl && Intl.Segmenter)
+  ? [...new Intl.Segmenter("si",{granularity:"grapheme"}).segment(s)].map(x=>x.segment)
+  : Array.from(s);
+const letters = ["අ","ආ","ඇ","ඈ"];
+
+/* ---------- Questions ---------- */
+const Q = [
+  {type:"mcq", q:"1. ඔයාට රාහුල්ව මිස් වෙනවද?", m:"ලකුණු 10", opts:[
+    ["ඔව්","✔ හරි. ඒත් තව ටිකක් ආසාවෙන් කියන්න තිබුණා 🙄"],
+    ["ගොඩක් ඔව්","✔ විශිෂ්ටයි! ලකුණු 10යි 🌟"],
+    ["පිස්සු වගේ","✔✔ ලකුණු 10ම + බෝනස් ලකුණු 5ක් 🎁"],
+    ["නෑ",null,"dodge"]
+  ]},
+  {type:"mcq", q:"2. රාහුල් නැති වෙලාවට ඔයා කරන්නේ මොනවද?", m:"ලකුණු 10", opts:[
+    ["ෆෝන් එක දිහා බලන් ඉන්නවා","✔ ෆෝන් එකටත් දැන් ඔයාව මිස් වෙනවා 📱"],
+    ["පරණ චැට් ආයෙත් කියවනවා","✔ සාක්ෂි හමු විය 🔍 Screenshot 400ක්"],
+    ["නිදාගන්නවා","✔ හීනෙනුත් රාහුල්ම තමයි 😴💭"],
+    ["ඉහත සියල්ලම","✔✔ මේක තමයි ඇත්තම උත්තරේ 💯"]
+  ]},
+  {type:"mcq", q:"3. ඔයාගේ msg එකක් seen කරලා reply නොකලොත්:", m:"ලකුණු 10", opts:[
+    ["ටිකක් දුක් වෙනවා","✘ වැරදියි. ගොඩාක් දුක් වෙනවා 😭"],
+    ["ස්ටේටස් එකට සැඩ් සින්දුවක් දානවා","✔ නිවැරදියි. Volume 100% 🎧💔"],
+    ["Facebook එකේ sad post ශෙයාර් කරනවා","✔ නිවැරදියි. Caption එක: ‘සමහරු වෙනස් වෙනවා…’ 💔📘"],
+    ["කොට්ටෙ බදාගෙන ෆිල්ම් එකක් වගේ ජනේලෙන් එළිය බලනවා","✔ වැස්සත් වැටෙනවා. සංගීතයත් තියෙනවා 🌧️🎻"]
+  ]},
+  {type:"slider", q:"4. ඔයාට රාහුල්ව කොච්චර මිස් වෙනවද? 0 – 100 අතර අගයක් දෙන්න.", m:"ලකුණු 20"},
+  {type:"mcq", q:"5. හිස්තැන පුරවන්න: “ඔයා මගේ ________.”", m:"ලකුණු 10", opts:[
+    ["කිරිබත්","✔ එහෙනම් මම ලුණු මිරිස් 🌶️ අපි සෙට් එක"],
+    ["WiFi password එක","✔ ඔයා නැතුව කිසිම දේකට connect වෙන්න බෑ 📶"],
+    ["රෑ 12ට කොත්තු partner","✔ අද රෑටත් එනවද? 🍳👀"],
+    ["සේරම","✔✔ නිවැරදිම උත්තරේ. රාහුල් අඬනවා 🥹"]
+  ]},
+  {type:"essay", q:"6. රචනාව: “රාහුල්” යන මාතෘකාව යටතේ කෙටි රචනයක් ලියන්න.", m:"ලකුණු 50",
+   text:"රාහුල් කියන්නේ ලෝකයේ හොඳම, ලස්සනම, බුද්ධිමත්ම කොල්ලා. එයා නැති හැම තත්පරයක්ම මට අවුරුද්දක් වගේ. එයා මට කොත්තු අරන් දෙන නිසා මම එයාට ආදරෙයි. මම එයාව පිස්සු වගේ මිස් කරනවා. 💕"}
+];
+
+const dodgeLines = [
+  "මේ උත්තරේ විෂය නිර්දේශයේ නෑ 📚",
+  "නිරීක්ෂක මහත්තයා බලන් ඉන්නවා 👀",
+  "ඒ උත්තරේට ලකුණු නෑ, කාලය නාස්ති කරන්න එපා ⏳",
+  "ඔයාගේ පෑනටවත් ‘නෑ’ ලියන්න බෑ ✒️",
+  "හරි, මම මේ උත්තරේ විභාග පත්‍රයෙන්ම අයින් කරනවා 🚫"
+];
+const sliderLevels = [
+  [70,"ගාලු මුවදොර හිරු බැසීම තරම් 🌅"],
+  [80,"ඇල්ල කෝච්චියේ ජනේලෙ තරම් 🚂💨"],
+  [90,"රෑ 12ට කොත්තු තරම් 🍳"],
+  [100,"රාහුල් නැතුව ඉන්නම බෑ තරම් 😭💖"]
+];
+
+/* ---------- Screens ---------- */
+function admit(){
+  screen.innerHTML = `
+    <h2>ප්‍රවේශ පත්‍රය 🎫</h2>
+    <div class="admit">
+      <p><b>විභාග අංකය:</b> 143 (I love you 😉)</p>
+      <p><b>විභාග ශාලාව:</b> රාහුල්ගේ හිත, 1 වන මහල</p>
+    </div>
+    <label class="f" for="nm">අපේක්ෂිකාවගේ නම:</label>
+    <input class="line" id="nm" placeholder="මගේ බබා" maxlength="24" autocomplete="off">
+    <p style="margin:16px 0 4px"><b>උපදෙස්:</b></p>
+    <ol class="rules">
+      <li>සියලුම ප්‍රශ්නවලට පිළිතුරු සපයන්න.</li>
+      <li>“නෑ” යන පිළිතුර තහනම්.</li>
+      <li>කොපි කිරීම අවසර නැත. රාහුල්ට කෝල් කිරීම අවසර ඇත. 📞</li>
+    </ol>
+    <button class="next big" id="go">විභාගය අරඹන්න ✍️</button>`;
+  $("go").onclick = () => {
+    const v = $("nm").value.trim(); if(v) herName = v;
+    startInvigilator(); ask(0);
+  };
+}
+
+function ask(i){
+  if(i >= Q.length){ gameIntro(); return; }
+  const item = Q[i];
+  const head = `<p class="marks">ප්‍රශ්නය ${i+1} / ${Q.length}</p><p class="q">${item.q} <span class="marks">(${item.m})</span></p>`;
+  if(item.type==="mcq") mcq(i,item,head);
+  if(item.type==="slider") slider(i,item,head);
+  if(item.type==="essay") essay(i,item,head);
+  window.scrollTo({top:0});
+}
+
+function mcq(i,item,head){
+  screen.innerHTML = head + `<ul class="opts" id="opts">${item.opts.map((o,k)=>
+    `<li><button class="opt" data-k="${k}" ${o[2]?'data-dodge="1"':''}><span class="l">${letters[k]})</span><span>${o[0]}</span></button></li>`).join("")}</ul>
+    <p class="remark" id="remark" aria-live="polite"></p>
+    <button class="next" id="nx" hidden>ඊළඟ ප්‍රශ්නය ➜</button>`;
+  const opts=$("opts"), remark=$("remark"), nx=$("nx");
+  let dodges=0;
+  opts.querySelectorAll(".opt").forEach(b=>{
+    const k=+b.dataset.k;
+    if(b.dataset.dodge){
+      const run = e => {
+        if(b.dataset.tamed) return;
+        if(e) e.preventDefault();
+        dodges++;
+        remark.textContent = dodgeLines[Math.min(dodges-1,dodgeLines.length-1)];
+        if(dodges>=dodgeLines.length){
+          b.dataset.tamed="1"; b.style.transform="";
+          b.querySelector("span:last-child").textContent="නෑ… කියන්න බෑ. ඔව් 💖";
+          return;
+        }
+        const w=opts.clientWidth;
+        const x=(Math.random()*w*0.5 - w*0.25)|0, y=(Math.random()*-180 - 20)|0;
+        b.style.transform=`translate(${x}px,${y}px) rotate(${(Math.random()*16-8)|0}deg)`;
+      };
+      b.addEventListener("mouseenter",run);
+      b.addEventListener("touchstart",run,{passive:false});
+      b.addEventListener("click",e=>{
+        if(!b.dataset.tamed){run(e);return;}
+        pick(b,"✔ අවසානයේ ඇත්ත කිව්වා. ලකුණු 100ම 😎");
+      });
+    } else {
+      b.onclick=()=>pick(b,item.opts[k][1]);
+    }
+  });
+  function pick(b,msg){
+    b.classList.add("picked"); opts.classList.add("locked");
+    remark.textContent=msg; nx.hidden=false; nx.focus();
+  }
+  nx.onclick=()=>ask(i+1);
+}
+
+function slider(i,item,head){
+  screen.innerHTML = head + `
+    <div class="sval" id="sv">50</div>
+    <input type="range" class="slider" id="sl" min="0" max="100" value="50" aria-label="කොච්චර මිස් වෙනවද">
+    <div class="slabel" id="slb"></div>
+    <p class="remark" id="remark" aria-live="polite"></p>
+    <button class="next" id="nx" hidden>ඊළඟ ප්‍රශ්නය ➜</button>`;
+  const sl=$("sl"), sv=$("sv"), slb=$("slb"), remark=$("remark"), nx=$("nx");
+  let bounced=0;
+  const show = () => {
+    const v=+sl.value; sv.textContent=v+"%";
+    let lab=""; for(const [m,l] of sliderLevels) if(v>=m) lab=l;
+    slb.textContent=lab;
+  };
+  sl.oninput = () => {
+    if(+sl.value < 70){
+      bounced++;
+      remark.textContent = bounced>2 ? "ආයෙත්? 😤 70ට අඩු අගයන් නීති විරෝධීයි ⚖️" : "70ට අඩු දාන්න බෑ. විභාග නීතිය එහෙමයි ⚖️";
+      sl.value=70+Math.floor(Math.random()*15);
+    } else if(+sl.value===100){
+      remark.textContent="✔✔ ලකුණු 20ම! රාහුල් දැන් සතුටින් නටනවා 🕺";
+      confetti(60);
+    } else {
+      remark.textContent="✔ හරි. ඒත් 100 දැම්මා නම් තවත් හොඳයි 😏";
+    }
+    show(); nx.hidden=false;
+  };
+  show(); nx.onclick=()=>ask(i+1);
+}
+
+function essay(i,item,head){
+  screen.innerHTML = head + `
+    <p class="marks" style="margin-top:-8px">ඔයාගේම වචනවලින් ලියන්න ✍️</p>
+    <textarea id="ta" placeholder="ලියන්න පටන් ගන්න…" aria-label="රචනාව"></textarea>
+    <p class="remark" id="remark" aria-live="polite"></p>
+    <button class="next" id="sub" hidden>පිළිතුර භාර දෙන්න 📤</button>
+    <button class="next" id="nx" hidden>ඊළඟට ➜</button>`;
+  const ta=$("ta"), remark=$("remark"), nx=$("nx"), sub=$("sub");
+  ta.addEventListener("input",()=>{ sub.hidden = !ta.value.trim(); });
+  sub.onclick=()=>{
+    herEssay=ta.value.trim();
+    ta.readOnly=true; sub.hidden=true;
+    remark.textContent="✔ විශ්මයජනක රචනාවක්. ලකුණු 50/50 🏆 රාහුල් කියවලා අඬනවා 🥹";
+    nx.hidden=false; nx.focus();
+  };
+  nx.onclick=()=>ask(i+1);
+}
+
+/* ---------- Practical: hug catching game ---------- */
+function gameIntro(){
+  screen.innerHTML = `
+    <h2>ප්‍රායෝගික පරීක්ෂණය 🧪</h2>
+    <p>රාහුල්ගේ බදාගැනීම් 🤗 සහ හාදු 💋 අල්ලන්න. තත්පර 15යි.</p>
+    <p><b>අවවාදයයි:</b> මදුරුවන්ට 🦟 සහ කරන්ට් බිල්වලට 🧾 ඔබන්න එපා!</p>
+    <button class="next big" id="go">පටන් ගන්න 🚀</button>`;
+  $("go").onclick = game;
+}
+
+function game(){
+  screen.innerHTML = `
+    <div class="hud"><span>අල්ලපු ගාණ: <span id="sc">0</span></span><span>⏱ <span id="tm">15</span></span></div>
+    <div class="game" id="field" aria-label="ක්‍රීඩා පිටිය"></div>`;
+  const field=$("field"), sc=$("sc"), tm=$("tm");
+  hugScore=0; let alive=true, items=[], last=performance.now(), spawnT=0, left=15;
+  const good=["🤗","💋","💖","🤗","💌"], bad=["🦟","🧾"];
+  const goodPop=["+1 🥰","බදාගත්තා!","ම්වා 😘","+1 💕"], badPop=["අයියෝ! -2","කරන්ට් බිල! 😱","කෑවා 🦟"];
+  function spawn(){
+    const isBad=Math.random()<0.25;
+    const b=document.createElement("button");
+    b.className="drop"; b.textContent=isBad?bad[Math.random()*bad.length|0]:good[Math.random()*good.length|0];
+    b.setAttribute("aria-label",isBad?"එපා":"අල්ලන්න");
+    const x=Math.random()*(field.clientWidth-56);
+    b.style.left=x+"px";
+    const it={el:b,y:-50,v:120+Math.random()*130+(15-left)*10,bad:isBad};
+    b.addEventListener("pointerdown",e=>{
+      e.preventDefault(); if(!alive||it.dead) return;
+      it.dead=true; b.remove();
+      hugScore=Math.max(0,hugScore+(it.bad?-2:1)); sc.textContent=hugScore;
+      const p=document.createElement("span"); p.className="pop";
+      p.textContent=it.bad?badPop[Math.random()*badPop.length|0]:goodPop[Math.random()*goodPop.length|0];
+      p.style.left=x+"px"; p.style.top=it.y+"px"; field.appendChild(p); setTimeout(()=>p.remove(),800);
+    });
+    field.appendChild(b); items.push(it);
+  }
+  function loop(now){
+    if(!alive) return;
+    const dt=(now-last)/1000; last=now; spawnT+=dt;
+    if(spawnT>0.45){spawnT=0; spawn();}
+    items.forEach(it=>{ if(it.dead) return; it.y+=it.v*dt; it.el.style.transform=`translateY(${it.y}px)`;
+      if(it.y>field.clientHeight){it.dead=true; it.el.remove();} });
+    items=items.filter(it=>!it.dead);
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+  const t=setInterval(()=>{
+    left--; tm.textContent=left;
+    if(left<=0){clearInterval(t); alive=false; field.innerHTML=""; setTimeout(results,400);}
+  },1000);
+}
+
+/* ---------- Results ---------- */
+function results(){
+  stopInvigilator();
+  const hugGrade = hugScore>=12?"A":hugScore>=8?"B":hugScore>=4?"C":"S";
+  const hugNote = hugGrade==="A"?`බදාගැනීම් ${hugScore}ක්! 🤗`:`බදාගැනීම් ${hugScore}යි. ඇත්ත ඒවා ගන්න ඉක්මනට එන්න 😤`;
+  screen.innerHTML = `
+    <h2>ප්‍රතිඵල පත්‍රිකාව 📜</h2>
+    <p><b>අපේක්ෂිකාව:</b> ${escapeHtml(herName)} &nbsp; <b>විභාග අංකය:</b> 143</p>
+    <table class="res">
+      <tr><th>විෂය</th><th>සාමාර්ථය</th><th>සටහන</th></tr>
+      <tr><td>රාහුල්ව මිස් කිරීම</td><td class="g">A</td><td class="n">දිවයිනේ පළමු ස්ථානය 🥇</td></tr>
+      <tr><td>පරණ චැට් කියවීම</td><td class="g">A</td><td class="n">Screenshot ප්‍රවීණයා</td></tr>
+      <tr><td>කොත්තු කෑම</td><td class="g">A</td><td class="n">ඩබල් චීස් විශේෂඥ 🧀</td></tr>
+      <tr><td>රචනාව</td><td class="g">A</td><td class="n">ලස්සනම රචනාව 💌</td></tr>
+      <tr><td>බදාගැනීම් අල්ලීම</td><td class="g">${hugGrade}</td><td class="n">${hugNote}</td></tr>
+      <tr><td>ඉක්මනට reply කිරීම</td><td class="g">C</td><td class="n">වැඩි දියුණු විය යුතුයි 😤📵</td></tr>
+    </table>
+    ${herEssay?`<div class="admit"><b>ඔයාගේ රචනාව ✍️</b><p style="white-space:pre-wrap;margin-top:6px">${escapeHtml(herEssay)}</p></div>`:""}
+    <p><b>Z-ලකුණ:</b> ∞ &nbsp; <b>දිවයින් ස්ථානය:</b> 1 (තරඟකරුවන් නෑ, එකම කෙනා ඔයා 💖)</p>
+
+    <p style="text-align:center;margin:26px 0 0;font-weight:800">🎁 සමත් වූ නිසා ත්‍යාගයක්! කාසියකින් සීරන්න වගේ ඇඟිල්ලෙන් අතගාන්න 👇</p>
+    <div class="scratch" id="scratch">
+      <div class="prize">
+        <b>නොමිලේ කොත්තු ඩේට් එකක් 🍳</b>
+        + අසීමිත බදාගැනීම් 🤗 + ක්‍රීම් සෝඩා 1ක් 🥤
+        <div style="font-size:15px;margin-top:6px">කල් ඉකුත් වීම: කවදාවත් නෑ</div>
+      </div>
+      <canvas id="sc"></canvas>
+    </div>
+
+    <div class="sig">විභාග කොමසාරිස්<span>රාහුල් 💛</span></div>
+    <div style="text-align:center"><button class="next" id="again">ආයෙත් විභාගය ලියන්න 🔁</button></div>`;
+  setTimeout(()=>{$("stamp").classList.add("on"); confetti();},350);
+  scratch();
+  $("again").onclick=()=>{ $("stamp").classList.remove("on"); admit(); window.scrollTo({top:0}); };
+  window.scrollTo({top:0});
+}
+
+function scratch(){
+  const wrap=$("scratch"), c=$("sc"), x=c.getContext("2d");
+  const r=wrap.getBoundingClientRect(), dpr=devicePixelRatio||1;
+  c.width=r.width*dpr; c.height=r.height*dpr; x.scale(dpr,dpr);
+  const grd=x.createLinearGradient(0,0,r.width,r.height);
+  grd.addColorStop(0,"#C9C9C9"); grd.addColorStop(.5,"#EDEDED"); grd.addColorStop(1,"#B5B5B5");
+  x.fillStyle=grd; x.fillRect(0,0,r.width,r.height);
+  x.fillStyle="#555"; x.font="800 20px 'Noto Sans Sinhala',sans-serif"; x.textAlign="center";
+  x.fillText("මෙතන සීරන්න 🪙",r.width/2,r.height/2+7);
+  x.globalCompositeOperation="destination-out";
+  let down=false, done=false, strokes=0;
+  const at=e=>{const b=c.getBoundingClientRect();return[e.clientX-b.left,e.clientY-b.top]};
+  const rub=e=>{
+    if(!down||done) return;
+    const [px,py]=at(e); x.beginPath(); x.arc(px,py,24,0,Math.PI*2); x.fill();
+    if(++strokes%15===0){
+      const d=x.getImageData(0,0,c.width,c.height).data; let clear=0;
+      for(let k=3;k<d.length;k+=64) if(d[k]===0) clear++;
+      if(clear/(d.length/64)>0.5){done=true; c.style.transition="opacity .5s"; c.style.opacity=0; setTimeout(()=>c.remove(),500); confetti(90); toast("🎉 ත්‍යාගය දිනුවා! Screenshot එකක් අරන් රාහුල්ට යවන්න 📸",4000);}
+    }
+  };
+  c.addEventListener("pointerdown",e=>{down=true;c.setPointerCapture(e.pointerId);rub(e)});
+  c.addEventListener("pointermove",rub);
+  c.addEventListener("pointerup",()=>down=false);
+}
+
+/* ---------- Invigilator jokes ---------- */
+const invLines = [
+  "👀 නිරීක්ෂක: අනිත් අයගේ කොළ බලන්න එපා! (වෙන කවුරුත් නෑ නේද 🤔)",
+  "📵 ෆෝන් තහනම්… රාහුල්ට මැසේජ් කරන්න නම් කමක් නෑ",
+  "🥤 වතුර බොන්න පුළුවන්. ක්‍රීම් සෝඩා නම් ඊටත් හොඳයි",
+  "⏰ තව පැය 2යි විනාඩි 59යි… නෑ, රාහුල් ගණන් කළේ වැරදියි",
+  "🍬 විභාගෙට ටොෆී ගෙනාවද? රාහුල්ටත් එකක් තියන්න"
+];
+function startInvigilator(){
+  stopInvigilator(); let k=0;
+  invigilator=setInterval(()=>toast(invLines[k++%invLines.length]),14000);
+}
+function stopInvigilator(){ clearInterval(invigilator); }
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+
+/* ---------- Confetti ---------- */
+function confetti(n=140){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const c=$("confetti"), x=c.getContext("2d"); c.width=innerWidth; c.height=innerHeight;
+  const bits=["💖","📝","✔","🤗","🍳","💯"];
+  const ps=Array.from({length:n},()=>({x:Math.random()*c.width,y:-20-Math.random()*c.height*.5,vy:2+Math.random()*3,vx:-1+Math.random()*2,r:Math.random()*6,s:18+Math.random()*16,e:bits[Math.random()*bits.length|0]}));
+  let f=0;
+  (function draw(){
+    x.clearRect(0,0,c.width,c.height);
+    ps.forEach(p=>{p.y+=p.vy;p.x+=p.vx+Math.sin((f+p.r)/12);x.font=p.s+"px serif";x.fillStyle="#D0021B";x.fillText(p.e,p.x,p.y)});
+    if(++f<240) requestAnimationFrame(draw); else x.clearRect(0,0,c.width,c.height);
+  })();
+}
+
+admit();
+</script>
+</body>
+</html>
